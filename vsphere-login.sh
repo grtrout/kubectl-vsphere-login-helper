@@ -5,7 +5,6 @@
 # Default variables
 USERID='user@domain'
 SERVERIP='10.0.1.10'
-DEFAULT_CLUSTER='tanzu-cluster'
 DEFAULT_SUPERVISOR_NAMESPACE='supervisor-ns'
 
 # Use default cluster variables if no parameters provided
