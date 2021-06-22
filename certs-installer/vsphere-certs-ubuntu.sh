@@ -21,3 +21,4 @@ sudo cp ./* /usr/local/share/ca-certificates/${CA_DIRECTORY_NAME}
 
 # Update the CA store
 sudo update-ca-certificates
+

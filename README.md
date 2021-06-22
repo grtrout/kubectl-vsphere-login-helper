@@ -18,3 +18,7 @@ A few things to make the `kubectl vsphere login` process easier...
 * The alias `kvlc` will get your current kubectl context name and use that as the first parameter
 * Other aliases can be made for common login scenarios. For example, `kvlg1` could be an alias for `kvl guest1`
 * Autocomplete works for guest clusters. For example, typing `kvl` and then prompting for completion (e.g., *TAB*, *TAB*) will return the available contexts from your kubeconfig file
+
+## CA Certs Installer
+* If applicable, see the `vsphere-certs-ubuntu.sh` script in the *certs-installer* folder. This simply downloads CA root certificates from vCenter and updates your local CA store. By doing this, you can avoid using the `--insecure-skip-tls-verify` command-line option with `kubectl vsphere login`. This script only works with Ubuntu.  
+ 
